@@ -1,1 +1,1 @@
-# team-sputnik
+# team-atlas
