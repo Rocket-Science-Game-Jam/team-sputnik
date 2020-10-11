@@ -88,9 +88,6 @@ Am Horizont hat $pronomen drei kleine Planeten entdeckt.
 &lt;table&gt;\
 &lt;tr&gt;&lt;th&gt;(if: $inv contains &quot;Gegenstand_3&quot;)[[[Zum gelben Planeten -&gt;links]]](else:)[[[Zum gelben Planeten -&gt;fertig]]]&lt;/th&gt;&lt;th&gt;(if: $inv contains &quot;Gegenstand_1&quot;)[[[Zum Donutplaneten -&gt;mitte]]](else:)[[[Zum Donutplaneten -&gt;fertig]]]&lt;/th&gt;&lt;th&gt;(if: $inv contains &quot;Gegenstand_2&quot;)[[[Zum Sternenplaneten  -&gt;rechts]]](else:)[[[Zum Sternenplaneten -&gt;fertig]]]&lt;/th&gt;&lt;/tr&gt;\
 &lt;/table&gt;
-(if: $inv contains &quot;Gegenstand_3&quot;)[[[Den gelben Planeten besuchen -&gt;links]]](else:)[[[Den gelben Planeten besuchen -&gt;fertig]]]
-(if: $inv contains &quot;Gegenstand_1&quot;)[[[Den Donutplaneten besuchen -&gt;mitte]]](else:)[[[Den Donutplaneten besuchen -&gt;fertig]]]
-(if: $inv contains &quot;Gegenstand_2&quot;)[[[Den Sternenplaneten besuchen -&gt;rechts]]](else:)[[[Den Sternenplaneten besuchen -&gt;fertig]]]
 (if: $inv&#39;s length &lt; 1)[[[Sieht so aus, als hättest du alle Gegenstände verteilt... -&gt;Ziel]]]</tw-passagedata><tw-passagedata pid="10" name="mitte" tags="" position="1847,514" size="100,100">Wir sind wieder zu Gast bei unserem bagelartigen Freund. Sein Planet sieht wirklich zum Anbeißen lecker aus und nicht nur der...
 &quot;Hast du mir etwas mitgebracht?&quot;, fragt er aufgeregt.
 &lt;img src=&quot;images/BewohnerDonutPlanet.png&quot;/&gt;
@@ -124,10 +121,11 @@ Am Horizont hat $pronomen drei kleine Planeten entdeckt.
 [[Ich wünsche mir mein Haustier zurück! -&gt;pet]]
 [[Ich hätte gern einen Milchshake. -&gt;shake]]</tw-passagedata><tw-passagedata pid="19" name="pet" tags="" position="2402,438" size="100,100">&quot;$dog!&quot;, ruft $name entzückt, &quot;Da bist du ja! Du glaubst nicht, was ich deinetwegen durchmachen musste. Na komm, lass uns jetzt zum Raumschiff zurückkehren und ich mach uns was Schönes zu Essen.&quot;
 &lt;img src=&quot;images/Haustier.gif&quot;/&gt;</tw-passagedata><tw-passagedata pid="20" name="shake" tags="" position="2669,545" size="100,100">Wunschgemäß überreichen die Götter $hero einen Milchshake.
+&lt;img src=&quot;images/milkshake2.gif&quot;/&gt;
 Genüßlich schlürft $pronomen bis nur noch eine kleine Pfütze im Glas zurückbleibt. 
 Köstlich! Aber weswegen war $pronomen hier hingereist? 
 Etwas zerstreut begibt sich $name zurück ins Raumschiff.
-[[Doch was ist das? -&gt;Ende]]] </tw-passagedata><tw-passagedata pid="21" name="Ende" tags="" position="2669,695" size="100,100">&quot;$name! Hast du hier die ganze Zeit auf mich gewartet? Was für ein Glück, dass es dir gutgeht!&quot;
+[[Doch was ist das? -&gt;Ende]]</tw-passagedata><tw-passagedata pid="21" name="Ende" tags="" position="2669,695" size="100,100">&quot;$dog! Hast du hier die ganze Zeit auf mich gewartet? Was für ein Glück, dass es dir gutgeht!&quot;
 &lt;img src=&quot;images/Haustier.gif&quot;/&gt;</tw-passagedata><tw-passagedata pid="22" name=" Übergabelinks" tags="" position="1438,604" size="100,100">&quot;Tatsächlich?&quot;, antwortet der Gott gelangweilt.
 &quot;Dann zeig mal her, was du für mich hast.&quot;
 (if: $inv contains &quot;Gegenstand_1&quot;)[[[Übergebe Zitrone -&gt;falsch]]]
@@ -157,7 +155,7 @@ Und nimm dich in Acht vor dem Bewohner des mittleren Planeten, der lügt immer!&
 [[Er wird schon wieder auftauchen. -&gt;wait]]
 [[Wo kann $dog bloß stecken? -&gt;search]]</tw-passagedata><tw-passagedata pid="29" name="dog" tags="small" position="397,311" size="100,100">Mitten im All lebte $name zusammen mit $pos2 treuen Freund namens
 &lt;img src=&quot;images/Haustier.gif&quot;/&gt;
-(align: &quot;=&gt;&lt;=&quot;)[(link: &quot;Rocky&quot;)[(set: $dog to &quot;Rocky&quot;)(goto: &quot;routine&quot;)]](align: &quot;=&gt;&lt;=&quot;)[(link: &quot;Pfiffi&quot;)[(set: $dog to &quot;Pfiffi&quot;)(goto: &quot;routine&quot;)]](align: &quot;=&gt;&lt;=&quot;)[(link: &quot;Schnuffi&quot;)[(set: $dog to &quot;Pfiffi&quot;)(goto: &quot;routine&quot;)]]
+(align: &quot;=&gt;&lt;=&quot;)[(link: &quot;Rocky&quot;)[(set: $dog to &quot;Rocky&quot;)(goto: &quot;routine&quot;)]](align: &quot;=&gt;&lt;=&quot;)[(link: &quot;Pfiffi&quot;)[(set: $dog to &quot;Pfiffi&quot;)(goto: &quot;routine&quot;)]](align: &quot;=&gt;&lt;=&quot;)[(link: &quot;Schnuffi&quot;)[(set: $dog to &quot;Schnuffi&quot;)(goto: &quot;routine&quot;)]]
 &lt;!--- [[test-&gt;routine]] --&gt;</tw-passagedata><tw-passagedata pid="30" name="wait" tags="small" position="815,139" size="100,100">Nach einem kurzen Zögern beschloss $name zu warten. 
 Gegen Mittag betrachtete $pronomen ratlos den unberührten Futternapf
 [[und beschloss, sich auf die Suche nach $dog zu begeben. -&gt;search]]</tw-passagedata><tw-passagedata pid="31" name=" BewohnerGelberPlanet" tags="" position="1552,189" size="100,100">Es ist unfreundlich und kurz angebunden.
