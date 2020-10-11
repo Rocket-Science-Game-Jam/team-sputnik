@@ -23,7 +23,11 @@ tw-passage img {
 	margin: 0 auto;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Indie Flower:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+
+.whateverclassyouneed {
+	font-family: 'Indie Flower';
+}
 
 tw-story{
 	/*
@@ -61,56 +65,43 @@ Jeden Abend bereitete $name $dog zum Dank ein königliches Mahl und las ihm ansc
 Jeden Morgen erwachte $name sehr früh (meistens stand $dog dann schon ungeduldig wartend vor $pos3) und gemeinsam unternahmen sie den üblichen Morgenspaziergang durch die fernen Weiten des Alls...
 Das heißt, normalerweise taten sie das. 
 
-[[Doch an diesem Morgen... -&gt;missing]]
-
-[[Test... -&gt;GelberPlanet]]</tw-passagedata><tw-passagedata pid="3" name="search" tags="big" position="941,300" size="100,100">Das Raumschiff war nur sehr klein, gerade groß genug für $name und $dog und schnell wurde klar, dass $dog hier nirgendwo steckte. Erschrocken entdeckte $name jedoch, dass die Ausgehmontur des kleinen $dog fehlte. An diesem Tag hatte er also beschlossen, seinen eigenen kleinen Spaziergang zu unternehmen.
+[[Doch an diesem Morgen... -&gt;missing]]</tw-passagedata><tw-passagedata pid="3" name="search" tags="big" position="941,300" size="100,100">Das Raumschiff war nur sehr klein, gerade groß genug für $name und $dog und schnell wurde klar, dass $dog hier nirgendwo steckte. Erschrocken entdeckte $name jedoch, dass die Ausgehmontur des kleinen $dog fehlte. An diesem Tag hatte er also beschlossen, seinen eigenen kleinen Spaziergang zu unternehmen.
 Besorgt schaut $name durch die unterste Luke des winzigen Raumschiffes und legt schließlich entschlossen $pos1 Raumanzug an. 
 Am Horizont hat $pronomen drei kleine Planeten entdeckt. 
 
-[[Ob $dog dort ist?-&gt;planets]]</tw-passagedata><tw-passagedata pid="4" name="planets" tags="big" position="1143,298" size="100,100">&quot;Wie seltsam diese Planeten aussehen!&quot;, sagt $name beim Näherkommen. Neben ihrem Kopf öffnet sich ein kleines Hologrammfenster:
+[[Ob $dog dort ist?-&gt;planets]]</tw-passagedata><tw-passagedata pid="4" name="planets" tags="big" position="1106,293" size="100,100">&quot;Wie seltsam diese Planeten aussehen!&quot;, sagt $name beim Näherkommen. 
 
-&quot;*Willkommen, Spacereisender! Du siehst vor dir drei Planeten, bewohnt von mächtigen Kreaturen: Dem Gott der Wahrheit, der immer schonungslos ehrlich ist, dem Gott der Lüge, der dich stets belügen wird und dem Gott des Zufalls, der mal lügen und mal die Wahrheit sprechen wird. Seit langem hüten die Götter jedoch das Geheimnis ihrer Identitäten.
-Die Legende will es, dass die Götter jedem Reisenden eine unlösbare Aufgabe aufbürden. Wer scheitert, kehrt meist nicht zurück. Doch wie großartig muss die Belohnung desjenigen sein, der ihre Aufträge erfüllen kann?
-
-Bist du mutig genug, es mit den Göttern aufzunehmen?*&quot;
-
-[[Den ersten Planeten besuchen -&gt;GelberPlanet]]
-[[Ich traue mir die Aufgabe nicht zu. -&gt;Passage_5]]</tw-passagedata><tw-passagedata pid="5" name="GelberPlanet" tags="gelberPlanet big" position="1407,330" size="100,100">(align: &quot;=&gt;&lt;=&quot;)[WILLKOMMEN AUF DEM GELBEN PLANETEN.]
+&lt;img src=&quot;images/galaxy.gif&quot; class=&quot;center&quot;/&gt;
+[[Neben ihrem Kopf öffnet sich ein kleines Hologrammfenster -&gt; Hologramm]]</tw-passagedata><tw-passagedata pid="5" name="GelberPlanet" tags="gelberPlanet big" position="1407,330" size="100,100">(align: &quot;=&gt;&lt;=&quot;)[WILLKOMMEN AUF DEM GELBEN PLANETEN.]
 &lt;img src=&quot;images/gelberPlanet.gif&quot; class=&quot;center&quot;/&gt;
 (align: &quot;=&gt;&lt;=&quot;)[[[Vor uns steht ein höchst seltsames Wesen.-&gt; BewohnerGelberPlanet]]]
 </tw-passagedata><tw-passagedata pid="6" name="Passage_5" tags="" position="1405,186" size="100,100">Möchte ich wirklich einsam bis ans Ende meiner Tage leben?
 
 [[Na schön, ich will doch den ersten Planeten besuchen. -&gt;GelberPlanet]]</tw-passagedata><tw-passagedata pid="7" name="DonutPlanet" tags="" position="1555,329" size="100,100">Also weiter zum zweiten Planeten. Der hat irritierenderweise die Form eines Donuts...
-&lt;img src=&quot;images/DonutPlanet.png&quot;/&gt;
-[[Ob hier wohl jemand lebt? -&gt;BewohnerDonutPlanet]]
-</tw-passagedata><tw-passagedata pid="8" name="dritterPlanet" tags="" position="1701,326" size="100,100">Der dritte Planet funkelt regelrecht. Millionen von Sternen blinken uns entgegen.
-&quot;Hallo, kannst du mir helfen, mein Haustier wiederzufinden?&quot;
-&quot;Mal sehen&quot;, sagt der Bewohner, der so stark leuchtet, dass $name den Blick senken muss.
-&quot;Vorher musst du &lt;u&gt;dem Gott des Zufalls&lt;/u&gt; aber diesen &lt;u&gt;Regenschirm&lt;/u&gt; überreichen.&quot;
-(set: $inv to $inv + (a: &quot;Gegenstand_3&quot;)) 
-&quot;Ah, das ist doch der Bewohner des mittleren Planeten, richtig?&quot;, fragt $name, erfreut, das Rätsel endlich gelöst zu haben.
-&quot;Hör bloß nicht auf den Bewohner des mittleren Planeten, der lügt immer!&quot;, bekommt er stattdessen zu hören.
 
-[[Und nun? -&gt;Gesamtszene]]</tw-passagedata><tw-passagedata pid="9" name="Gesamtszene" tags="" position="1848,323" size="100,100">Ratlos blickt $name auf die drei Planeten. Kannst du ihm helfen, das Rätsel zu lösen?
+&lt;img src=&quot;images/DonutPlanet.gif&quot; class=&quot;center&quot; height=&quot;500px&quot;/&gt;
+(align: &quot;=&gt;&lt;=&quot;)[[[Ob hier wohl jemand lebt? -&gt;BewohnerDonutPlanet]]]
+</tw-passagedata><tw-passagedata pid="8" name="dritterPlanet" tags="" position="1701,326" size="100,100">Der dritte Planet funkelt regelrecht. Wir sind auf einem riesigen Stern gelandet!
 
+[[Und wieder sind wir nicht allein. -&gt; BewohnerSternPlanet]]</tw-passagedata><tw-passagedata pid="9" name="Gesamtszene" tags="" position="1848,323" size="100,100">Ratlos blickt $name auf die drei Planeten. Kannst du ihm helfen, das Rätsel zu lösen?
+&lt;img src=&quot;images/galaxy.gif&quot; class=&quot;center&quot;/&gt;
+&lt;table&gt;\
+&lt;tr&gt;&lt;th&gt;(if: $inv contains &quot;Gegenstand_3&quot;)[[[Zum gelben Planeten -&gt;links]]](else:)[[[Zum gelben Planeten -&gt;fertig]]]&lt;/th&gt;&lt;th&gt;(if: $inv contains &quot;Gegenstand_1&quot;)[[[Zum Donutplaneten -&gt;mitte]]](else:)[[[Zum Donutplaneten -&gt;fertig]]]&lt;/th&gt;&lt;th&gt;(if: $inv contains &quot;Gegenstand_2&quot;)[[[Zum Sternenplaneten  -&gt;rechts]]](else:)[[[Zum Sternenplaneten -&gt;fertig]]]&lt;/th&gt;&lt;/tr&gt;\
+&lt;/table&gt;
 (if: $inv contains &quot;Gegenstand_3&quot;)[[[Den gelben Planeten besuchen -&gt;links]]](else:)[[[Den gelben Planeten besuchen -&gt;fertig]]]
 (if: $inv contains &quot;Gegenstand_1&quot;)[[[Den Donutplaneten besuchen -&gt;mitte]]](else:)[[[Den Donutplaneten besuchen -&gt;fertig]]]
 (if: $inv contains &quot;Gegenstand_2&quot;)[[[Den Sternenplaneten besuchen -&gt;rechts]]](else:)[[[Den Sternenplaneten besuchen -&gt;fertig]]]
-
-(if: $inv&#39;s length &lt; 1)[[[Sieht so aus, als hättest du alle Gegenstände verteilt... -&gt;Ziel]]]</tw-passagedata><tw-passagedata pid="10" name="mitte" tags="" position="1847,514" size="100,100">Wir sind wieder zu Gast beim unsichtbaren Bewohner. Sein Planet sieht wirklich zum Anbeißen lecker aus...
-&quot;Hast du mir etwas mitgebracht?&quot;, fragt eine Stimme aufgeregt (zum Glück, denn $name hätte sonst wohl eine Dummheit begangen!)
-
+(if: $inv&#39;s length &lt; 1)[[[Sieht so aus, als hättest du alle Gegenstände verteilt... -&gt;Ziel]]]</tw-passagedata><tw-passagedata pid="10" name="mitte" tags="" position="1847,514" size="100,100">Wir sind wieder zu Gast bei unserem bagelartigen Freund. Sein Planet sieht wirklich zum Anbeißen lecker aus und nicht nur der...
+&quot;Hast du mir etwas mitgebracht?&quot;, fragt er aufgeregt.
+&lt;img src=&quot;images/BewohnerDonutPlanet.png&quot;/&gt;
 [[[Ja, ich möchte dir etwas schenken. -&gt; Übergabemitte]]]
 [[[Ich bin noch nicht so weit. Kannst du mir beim Rätsel helfen? -&gt; Hinweismitte]]]
 
-</tw-passagedata><tw-passagedata pid="11" name="rechts" tags="" position="2249,433" size="100,100">Schon von weitem strahlt uns der Bewohner des Sternenplaneten entgegen. 
-
+</tw-passagedata><tw-passagedata pid="11" name="rechts" tags="" position="2249,433" size="100,100">Schon von weitem strahlt uns der Bewohner des Sternenplaneten entgegen.
+&lt;img src=&quot;images/BewohnerSternPlanet.png&quot;/&gt;
 &quot;Wie kann ich dir helfen, Reisender?&quot;
-
 [[[Ich habe eine Lieferung für dich -&gt; Übergaberechts]]]
-[[[Sorry, ich habe vergessen, was du vorhin zu mir gesagt hast. -&gt; Hinweisrechts]]]
-
-</tw-passagedata><tw-passagedata pid="12" name="falsch" tags="" position="1825,1087" size="100,100">(align: &quot;=&gt;&lt;=&quot;)[G  A  M  E     O  V  E  R]
+[[[Sorry, ich habe vergessen, was du vorhin zu mir gesagt hast. -&gt; Hinweisrechts]]]</tw-passagedata><tw-passagedata pid="12" name="falsch" tags="" position="1825,1087" size="100,100">(align: &quot;=&gt;&lt;=&quot;)[G  A  M  E     O  V  E  R]
 &quot;Gibst du dir überhaupt Mühe? Verschwinde jetzt, bevor ich richtig wütend werde und komm&#39; nie wieder&quot;
 
 [[Noch einmal spielen -&gt;character]]
@@ -118,7 +109,7 @@ Bist du mutig genug, es mit den Göttern aufzunehmen?*&quot;
 (set: $inv to $inv - (a: &quot;Gegenstand_3&quot;)) 
 &quot;Kein Problem&quot;, sagt $name und macht sich auf den Weg [[zum nächsten Planeten-&gt;Gesamtszene]]</tw-passagedata><tw-passagedata pid="14" name="links" tags="" position="1526,478" size="100,100">&quot;Da bist du ja wieder&quot;, grunzt der Bewohner des gelben Planeten mürrisch.
 &quot;Was willst du?&quot;
-
+&lt;img src=&quot;images/BewohnerGelberPlanet.png&quot;/&gt;
 [[[Ich möchte dir etwas geben -&gt; Übergabelinks]]]
 [[[Kannst du deinen Hinweis noch einmal wiederholen? -&gt; Hinweislinks]]]</tw-passagedata><tw-passagedata pid="15" name="mrichtig" tags="" position="2082,1053" size="100,100">&quot;Klasse, du musst wissen, ich liebe Zitronen. Sie sind nicht so toll wie Donuts, aber...na ja, hast du nicht noch etwas zu erledigen?&quot;
 (set: $inv to $inv - (a: &quot;Gegenstand_1&quot;)) 
@@ -131,12 +122,13 @@ Bist du mutig genug, es mit den Göttern aufzunehmen?*&quot;
 [[Alles klar, ich fliege gleich weiter. -&gt;Gesamtszene]]</tw-passagedata><tw-passagedata pid="18" name="Ziel" tags="" position="2435,263" size="100,100">Gut gemacht, du hast das Rätsel gelöst. Die Götter sind bereit, $hero einen kleinen Wunsch zu gewähren. Wofür soll sich $name entscheiden?
 
 [[Ich wünsche mir mein Haustier zurück! -&gt;pet]]
-
-[[Ich hätte gern einen Milchshake. -&gt;shake]]</tw-passagedata><tw-passagedata pid="19" name="pet" tags="" position="2402,438" size="100,100">&quot;$dog!&quot;, ruft $name entzückt, &quot;Da bist du ja! Du glaubst nicht, was ich deinetwegen durchmachen musste. Na komm, lass uns jetzt zum Raumschiff zurückkehren und ich mach uns was Schönes zu Essen.&quot;</tw-passagedata><tw-passagedata pid="20" name="shake" tags="" position="2669,545" size="100,100">Wunschgemäß überreichen die Götter $hero einen Milchshake.
+[[Ich hätte gern einen Milchshake. -&gt;shake]]</tw-passagedata><tw-passagedata pid="19" name="pet" tags="" position="2402,438" size="100,100">&quot;$dog!&quot;, ruft $name entzückt, &quot;Da bist du ja! Du glaubst nicht, was ich deinetwegen durchmachen musste. Na komm, lass uns jetzt zum Raumschiff zurückkehren und ich mach uns was Schönes zu Essen.&quot;
+&lt;img src=&quot;images/Haustier.gif&quot;/&gt;</tw-passagedata><tw-passagedata pid="20" name="shake" tags="" position="2669,545" size="100,100">Wunschgemäß überreichen die Götter $hero einen Milchshake.
 Genüßlich schlürft $pronomen bis nur noch eine kleine Pfütze im Glas zurückbleibt. 
 Köstlich! Aber weswegen war $pronomen hier hingereist? 
 Etwas zerstreut begibt sich $name zurück ins Raumschiff.
-[[Doch was ist das? -&gt;Ende]]] </tw-passagedata><tw-passagedata pid="21" name="Ende" tags="" position="2669,695" size="100,100">&quot;$name! Hast du hier die ganze Zeit auf mich gewartet? Was für ein Glück, dass es dir gutgeht!&quot;</tw-passagedata><tw-passagedata pid="22" name=" Übergabelinks" tags="" position="1438,604" size="100,100">&quot;Tatsächlich?&quot;, antwortet der Gott gelangweilt.
+[[Doch was ist das? -&gt;Ende]]] </tw-passagedata><tw-passagedata pid="21" name="Ende" tags="" position="2669,695" size="100,100">&quot;$name! Hast du hier die ganze Zeit auf mich gewartet? Was für ein Glück, dass es dir gutgeht!&quot;
+&lt;img src=&quot;images/Haustier.gif&quot;/&gt;</tw-passagedata><tw-passagedata pid="22" name=" Übergabelinks" tags="" position="1438,604" size="100,100">&quot;Tatsächlich?&quot;, antwortet der Gott gelangweilt.
 &quot;Dann zeig mal her, was du für mich hast.&quot;
 (if: $inv contains &quot;Gegenstand_1&quot;)[[[Übergebe Zitrone -&gt;falsch]]]
 (if: $inv contains &quot;Gegenstand_2&quot;)[[[Übergebe Donut -&gt;falsch]]]
@@ -160,29 +152,39 @@ Etwas zerstreut begibt sich $name zurück ins Raumschiff.
 Du sollst den &lt;u&gt;Regenschirm&lt;/u&gt; dem &lt;u&gt;Gott des Zufalls&lt;/u&gt; übergeben.
 Und nimm dich in Acht vor dem Bewohner des mittleren Planeten, der lügt immer!&quot;
 
-[[[Diesmal merke ich es mir, versprochen! -&gt;Gesamtszene]]]</tw-passagedata><tw-passagedata pid="28" name="missing" tags="small" position="756,303" size="100,100">...fehlte von Rocky jede Spur.
+[[[Diesmal merke ich es mir, versprochen! -&gt;Gesamtszene]]]</tw-passagedata><tw-passagedata pid="28" name="missing" tags="small" position="756,303" size="100,100">...fehlte von $dog jede Spur.
 
 [[Er wird schon wieder auftauchen. -&gt;wait]]
 [[Wo kann $dog bloß stecken? -&gt;search]]</tw-passagedata><tw-passagedata pid="29" name="dog" tags="small" position="397,311" size="100,100">Mitten im All lebte $name zusammen mit $pos2 treuen Freund namens
-
-(link: &quot;Rocky&quot;)[(set: $dog to &quot;Rocky&quot;)(goto: &quot;routine&quot;)]
-(link: &quot;Pfiffi&quot;)[(set: $dog to &quot;Pfiffi&quot;)(goto: &quot;routine&quot;)]
-
+&lt;img src=&quot;images/Haustier.gif&quot;/&gt;
+(align: &quot;=&gt;&lt;=&quot;)[(link: &quot;Rocky&quot;)[(set: $dog to &quot;Rocky&quot;)(goto: &quot;routine&quot;)]](align: &quot;=&gt;&lt;=&quot;)[(link: &quot;Pfiffi&quot;)[(set: $dog to &quot;Pfiffi&quot;)(goto: &quot;routine&quot;)]](align: &quot;=&gt;&lt;=&quot;)[(link: &quot;Schnuffi&quot;)[(set: $dog to &quot;Pfiffi&quot;)(goto: &quot;routine&quot;)]]
 &lt;!--- [[test-&gt;routine]] --&gt;</tw-passagedata><tw-passagedata pid="30" name="wait" tags="small" position="815,139" size="100,100">Nach einem kurzen Zögern beschloss $name zu warten. 
 Gegen Mittag betrachtete $pronomen ratlos den unberührten Futternapf
 [[und beschloss, sich auf die Suche nach $dog zu begeben. -&gt;search]]</tw-passagedata><tw-passagedata pid="31" name=" BewohnerGelberPlanet" tags="" position="1552,189" size="100,100">Es ist unfreundlich und kurz angebunden.
 &lt;img src=&quot;images/BewohnerGelberPlanet.png&quot;/&gt;
-&quot;Nimm das hier&quot;, sagt es und überreicht uns eine &lt;u&gt;Zitrone&lt;/u&gt;, &quot;und übergib sie &lt;u&gt;dem Gott der Lüge&lt;/u&gt;&quot;.
-(set: $inv to $inv + (a: &quot;Gegenstand_1&quot;)) 
+&quot;Nimm das hier&quot;, sagt es und überreicht uns eine &lt;u&gt;Zitrone&lt;/u&gt;, &quot;und übergib sie &lt;u&gt;dem Gott der Lüge&lt;/u&gt;&quot;.(set: $inv to $inv + (a: &quot;Gegenstand_1&quot;)) 
 &quot;Wie erkenne ich den Gott der Lüge?&quot;, fragt $name perplex.
-Das Wesen schweigt kurz. Dann sagt es: &quot;Frag mal den Bewohner des mittleren Planeten. Der sagt immer die Wahrheit.
+Das Wesen schweigt kurz. Dann sagt es: &quot;Frag mal den Bewohner des mittleren Planeten. Der sagt immer die Wahrheit.&quot;
 
-[[Den zweiten Planeten besuchen -&gt;DonutPlanet]]</tw-passagedata><tw-passagedata pid="32" name="BewohnerDonutPlanet" tags="" position="1712,186" size="100,100">&quot;Hallo&quot;, haucht es aus dem Nichts, &quot;du kannst mich nicht sehen, aber ich sehe dich.&quot;
-&quot;Wieso kann ich dich nicht sehen?&quot;, fragt $name.
-&quot;Wer weiß, auf meinem Planeten herrscht der Zufall...würdest du &lt;u&gt;dem Gott der Wahrheit&lt;/u&gt; einen &lt;u&gt;Donut&lt;/u&gt; von mir übergeben?&quot;
+[[Den zweiten Planeten besuchen -&gt;DonutPlanet]]</tw-passagedata><tw-passagedata pid="32" name="BewohnerDonutPlanet" tags="" position="1712,186" size="100,100">&quot;Hallo&quot;, haucht es aus dem Nichts, &quot;ich bin hier unten.&quot;
+&lt;img src=&quot;images/BewohnerDonutPlanet.png&quot;/&gt;
+&quot;Du siehst ja süß aus!&quot;, sagt $name entzückt und bekam augenblicklich Hunger.
+&quot;Willkommen auf dem Zufallsplaneten...würdest du &lt;u&gt;dem Gott der Wahrheit&lt;/u&gt; einen &lt;u&gt;Donut&lt;/u&gt; von mir übergeben?&quot;
 (set: $inv to $inv + (a: &quot;Gegenstand_2&quot;)) 
+[[Den dritten Planeten besuchen -&gt;dritterPlanet]]</tw-passagedata><tw-passagedata pid="33" name=" Hologramm" tags="" position="1143,448" size="100,100">(css: &quot;color: chartreuse;&quot;)[WILLKOMMEN, SPACEREISENDER! Du siehst vor dir drei Planeten, bewohnt von mächtigen Kreaturen: Dem &lt;u&gt;Gott der Wahrheit&lt;/u&gt;, der immer schonungslos ehrlich ist, dem &lt;u&gt;Gott der Lüge&lt;/u&gt;, der dich stets belügen wird und dem &lt;u&gt;Gott des Zufalls&lt;/u&gt;, der mal lügen und mal die Wahrheit sprechen wird. Seit langem hüten die Götter jedoch das Geheimnis ihrer Identitäten.
+Die Legende will es, dass die Götter jedem Reisenden eine unlösbare Aufgabe aufbürden. Wer scheitert, kehrt meist nicht zurück. Doch wie großartig muss die Belohnung desjenigen sein, der ihre Aufträge erfüllen kann?
 
-[[Den dritten Planeten besuchen -&gt;dritterPlanet]]</tw-passagedata></tw-storydata>
+Bist du mutig genug, es mit den Göttern aufzunehmen?]
+
+[[Den ersten Planeten besuchen -&gt;GelberPlanet]]
+[[Ich traue mir die Aufgabe nicht zu. -&gt;Passage_5]]</tw-passagedata><tw-passagedata pid="34" name=" BewohnerSternPlanet" tags="" position="1860,176" size="100,100">&quot;Nanu, Besuch? Der ist hier selten.&quot;
+&lt;img src=&quot;images/BewohnerSternPlanet.png&quot;/&gt;
+&quot;Hallo, kannst du mir helfen, mein Haustier wiederzufinden?&quot;
+&quot;Mal sehen&quot;, sagt der Bewohner,&quot;vorher musst du &lt;u&gt;dem Gott des Zufalls&lt;/u&gt; aber diesen &lt;u&gt;Regenschirm&lt;/u&gt; überreichen.&quot;(set: $inv to $inv + (a: &quot;Gegenstand_3&quot;)) 
+&quot;Ah, das ist doch der Bewohner des mittleren Planeten, richtig?&quot;, fragt $name, erfreut, das Rätsel endlich gelöst zu haben.
+&quot;Hör bloß nicht auf den Bewohner des mittleren Planeten, der lügt immer!&quot;, bekommt er stattdessen zu hören.
+
+[[Und nun? -&gt;Gesamtszene]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
